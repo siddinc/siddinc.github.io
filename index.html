@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Siddharth's Portfolio</title>
+</head>
+<body>
+  <button class="btn btn-primary btn-lg" onclick="scrollToTop()" id="scroll-to-top"><i class="fas fa-arrow-up"></i></button>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow">
+    <a class="navbar-brand" href="https://siddinc.github.io">
+      <span id="navbar-brand-text"><i class="fas fa-dice-d20"></i></span>
+      <span id="navbar-brand-text">Siddharth<span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-pills ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" id="navbar-item" onclick="scrollView(this, 'about')">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="navbar-item" onclick="scrollView(this, 'work-experience')">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="navbar-item" onclick="scrollView(this, 'projects')">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="navbar-item" onclick="scrollView(this, 'blog')">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="navbar-item">
+            <button class="btn btn-sm badge-pill" id="navbar-button" onclick="scrollView(this, 'contact')"><span id="button-text">Get in touch</span></button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="card border-0 section" id="home" style="background-color: rgb(240,245,245);">
+    <div class="card-body">
+      <div class="row align-items-center">
+        <div class="col-sm-6">
+          <h1 id="section-subheading">Hey there,</h1>
+          <h1 id="section-heading">I'm Siddharth Sanghavi.</h1>
+          <p class="lead" id="section-subheading">Full-stack Developer and Computer Science Undergrad based in Mumbai, India.</p>
+        </div>
+        <div class="col-sm-6 text-center">
+          <img src="images/home.png" alt="oops">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card border-0 section" id="about" style="background-color: rgb(250, 240, 245);">
+    <div class="card-body">
+      <h1 id="section-heading"><i class="far fa-id-card section-logo"></i> About</h1>
+      <div class="row align-items-center">
+        <div class="col-sm-6 text-center"> 
+          <img src="images/profile.jpg" alt="oops">
+        </div>
+        <div class="col-sm-6 text-left">
+          <p class="lead" id="section-subheading">Apart from Full-stack Development, I eagerly like working with the intersection between Computer Vision and Deep Learning. IoT and Robotics majorly occupy my areas of interest.</p>
+          <p class="lead" id="section-subheading">Here are a few technologies I've worked with:</p>
+          <span>
+          <span class="badge badge-pill badge-info">JavaScript</span>
+          <span class="badge badge-pill badge-info">Python</span>
+          <span class="badge badge-pill badge-info">Golang</span>
+          </span>
+          <br>
+          <span>
+            <span class="badge badge-pill badge-info">Node.js</span>
+            <span class="badge badge-pill badge-info">Express.js</span>
+            <span class="badge badge-pill badge-info">Django</span>
+            <span class="badge badge-pill badge-info">GraphQL</span>
+            <span class="badge badge-pill badge-info">Severless</span>
+          </span>
+          <br>
+          <span>
+            <span class="badge badge-pill badge-info">MongoDB</span>
+            <span class="badge badge-pill badge-info">Redis</span>
+            <span class="badge badge-pill badge-info">MySQL</span>
+            <span class="badge badge-pill badge-info">PostgreSQL</span>
+          </span>
+          <br>
+          <span>
+            <span class="badge badge-pill badge-info">React.js</span>
+            <span class="badge badge-pill badge-info">Bootstrap 4</span>
+            <span class="badge badge-pill badge-info">Semantic UI</span>
+          </span>
+          <br>
+          <span>
+            <span class="badge badge-pill badge-info">Keras</span>
+            <span class="badge badge-pill badge-info">TensorFlow</span>
+            <span class="badge badge-pill badge-info">OpenCV</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card border-0 section" id="work-experience" style="background-color: rgb(240,245,245);">
+    <div class="card-body">
+      <h1 id="section-heading"><i class="fas fa-business-time section-logo"></i> Work Experience</h1>
+      <p class="lead" id="section-subheading">Full-stack Web Development Intern @ <a id="section-text" href="https://www.lidolearning.com">LIDO Learning</a></p>
+      <p class="lead" id="section-text">July 2019 - September 2019</p>
+      <div class="container">
+        <ul type="circle" id="section-subtext">
+          <li>Designed and developed a passwordless user authentication system using <span class="badge badge-pill badge-info">AWS Lambda</span> functions.</li>
+          <li>Developed a feature for the tracking of user activity while watching a video in a dashboard using <span class="badge badge-pill badge-info">React.js</span> and <span class="badge badge-pill badge-info">Hasura GraphQL</span>.</li>
+        </ul>
+      </div>
+      <br>
+      <p class="lead" id="section-subheading">Web Development Mentor @ <a id="section-text" href="https://djunicode.in">DJ Unicode</a></p>
+      <a class="lead" id="section-text">July 2019 - Present</a>
+      <div class="container">
+        <ul type="circle" id="section-subtext">
+          <li>DJ Unicode is an initiative to foster a culture of open-source development to students in their early years at my college.</li>
+          <li>It has grown from 45 developers in its first year to 80 developers in its second year with 7 ongoing projects.</li>
+          <li>Currently, I'm mentoring 5 juniors for incorporating backend web technologies like <span class="badge badge-pill badge-info">Node.js</span> and <span class="badge badge-pill badge-info">MongoDB</span> for internal college projects.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="card border-0 section" id="projects" style="background-color: rgb(250, 240, 245);">
+    <div class="card-body">
+      <h1 id="section-heading"><i class="fas fa-code-branch section-logo"></i> Projects</h1>
+      <p class="lead" id="section-subheading">Here are a few projects I've made:</p>
+      <br>
+      <div class="row mx-auto">  
+        <div class="col-sm-4">
+          <div class="card shadow" id="projects-card">
+            <div class="card-body">
+              <h1 class="card-title" id="card-heading">Automated Cart</h1>
+              <p class="lead" id="card-text">A smart cart which follows the user in stores to provide a hassle-free, cost-effective shopping experience especially for pregnant women and elderly people.</p>
+              <span>
+                <span><a data-toggle="tooltip" data-placement="bottom" title="Node.js, React.js, Arduino"><i id="card-info" class="fas fa-info-circle" ></i></a></span>
+                <!-- <span><a href=""><i class="fas fa-arrow-circle-right" id="card-source"></i></a></span> -->
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card shadow" id="projects-card">
+            <div class="card-body">
+              <h1 class="card-title" id="card-heading">Reverse Image Search Engine</h1>
+              <p class="lead" id="card-text">A Content-based Image Retrieval System built using VP Trees and Autoencoders.</p>
+              <span>
+                <span><a data-toggle="tooltip" data-placement="bottom" title="Python, OpenCV"><i id="card-info" class="fas fa-info-circle" ></i></a></span>
+                <span><a href="https://github.com/siddinc/image_search_engine"><i class="fas fa-arrow-circle-right" id="card-source"></i></a></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card shadow" id="projects-card">
+            <div class="card-body">
+              <h1 class="card-title" id="card-heading">IIT-Bombay e-Yantra Robot</h1>
+              <p class="lead" id="card-text">Reached Stage 2 of the robotics competition by building a robot, implementing AVR programming and Augmented Reality.</p>
+              <span>
+                <span><a data-toggle="tooltip" data-placement="bottom" title="Python, OpenCV, Embedded C"><i id="card-info" class="fas fa-info-circle" ></i></a></span>
+                <span><a href="https://github.com/siddinc/eyantra-thirsty-crow"><i class="fas fa-arrow-circle-right" id="card-source"></i></a></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row mx-auto">  
+        <div class="col-sm-4">
+          <div class="card shadow" id="projects-card">
+            <div class="card-body">
+              <h1 class="card-title" id="card-heading">Image Denoising</h1>
+              <p class="lead" id="card-text">Noise removal from images using Autoencoders.</p>
+              <span>
+                <span><a data-toggle="tooltip" data-placement="bottom" title="Python, OpenCV"><i id="card-info" class="fas fa-info-circle" ></i></a></span>
+                <span><a href="https://github.com/siddinc/image_denoising"><i class="fas fa-arrow-circle-right" id="card-source"></i></a></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card shadow" id="projects-card">
+            <div class="card-body">
+              <h1 class="card-title" id="card-heading">Attendance Manager</h1>
+              <p class="lead" id="card-text">Attendance management system for my college.</p>
+              <span>
+                <span><a data-toggle="tooltip" data-placement="bottom" title="Django REST Framework, React.js"><i id="card-info" class="fas fa-info-circle" ></i></a></span>
+                <span><a href="https://github.com/siddinc/attendance_manager"><i class="fas fa-arrow-circle-right" id="card-source"></i></a></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card shadow" id="projects-card">
+            <div class="card-body">
+              <h1 class="card-title" id="card-heading">Drowsiness Detector</h1>
+              <p class="lead" id="card-text">A vehicle safety application which aims at mitigating accidents caused by the driver getting drowsy.</p>
+              <span>
+                <span><a data-toggle="tooltip" data-placement="bottom" title="Python, OpenCV"><i id="card-info" class="fas fa-info-circle" ></i></a></span>
+                <span><a href="https://github.com/siddinc/drowsiness_detector"><i class="fas fa-arrow-circle-right" id="card-source"></i></a></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card border-0 section" id="blog" style="background-color: rgb(240,245,245);">
+    <div class="card-body">
+      <h1 id="section-heading"><i class="far fa-clipboard section-logo"></i> Blog</h1>
+      <div class="row mx-auto">  
+        <div class="col-sm-4">
+          <div class="card shadow" id="projects-card">
+            <div class="card-body">
+              <h1 class="card-title" id="card-heading">Intership at a Tech Start-Up</h1>
+              <p class="lead" id="card-text">Recounting my Internship days at LIDO Learning</p>
+              <span>
+                <span>
+                  <a href="https://medium.com/@siddinc/my-internship-experience-at-a-tech-start-up-67ceed5056a5">
+                  <i class="fas fa-arrow-circle-right" id="card-source"></i>
+                  </a>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card border-0 section" id="contact" style="background-color: rgb(250, 240, 245);">
+    <div class="card-body">
+      <h1 id="section-heading"><i class="far fa-address-book section-logo"></i> Contact</h1>
+      <p class="lead" id="section-subheading">Feel free to connect with me on:</p>
+      <div class="row align-items-center">
+        <div class="col-sm-6 text-center">
+          <span>
+            <span><a data-toggle="tooltip" data-placement="bottom" title="LinkedIn" href="https://linkedin.com/in/siddinc"><i class="fab fa-linkedin-in contact-logo" id="linkedin"></i></a></span>
+            <span><a data-toggle="tooltip" data-placement="bottom" title="GitHub" href="https://github.com/siddinc"><i class="fab fa-github contact-logo" id="github"></i></a></span>
+            <span><a data-toggle="tooltip" data-placement="bottom" title="Medium" href="https://medium.com/@siddinc"><i class="fab fa-medium-m contact-logo" id="medium"></i></a></span>
+          </span>
+        </div>
+        <div class="col-sm-6 text-center">
+          <img src="images/contact.png" alt="oops">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+<footer>
+  <nav class="navbar navbar-expand-lg navbar-dark" id="footer">
+    <span class="navbar-text mx-auto"><a id="footer-text" href="https://github.com/siddinc/siddinc.github.io">Built with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i></a></span>
+  </nav>
+</footer>
+</html>
