@@ -3,12 +3,6 @@ $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 });
 
-// scrollView
-const scrollView = (event, elementId) => {
-	const element = document.getElementById(elementId);
-	element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-};
-
 // ScrollToTop
 const mybutton = document.getElementById('scroll-to-top');
 
