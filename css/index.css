@@ -123,6 +123,8 @@ body {
 #home img {
   width: 70%;
   height: 70%;
+  margin: 3em;
+  padding: 0em;
 }
 
 #home img:hover {
@@ -133,7 +135,7 @@ body {
   width: 50%;
   height: 50%;
   border-radius: 50%;
-  margin: 0em;
+  margin: 3em;
   padding: 0em;
 }
 
@@ -187,6 +189,8 @@ body {
 #contact img {
   width: 70%;
   height: 70%;
+  margin: 3em;
+  padding: 0em;
 }
 
 #contact img:hover {
