@@ -213,6 +213,10 @@ body {
   color: rgb(64,119,192);
 }
 
+#gitlab:hover {
+  color: rgb(243,108,49);
+}
+
 #medium:hover {
   color: black;
 }
