@@ -3,7 +3,7 @@ $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 });
 
-// ScrollToTop
+// scrollToTop
 const mybutton = document.getElementById('scroll-to-top');
 
 window.onscroll = () => scrollCheck();
@@ -19,4 +19,5 @@ const scrollCheck = () => {
 const scrollToTop = () => {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
+	window.location.hash = "#home";
 };
