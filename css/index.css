@@ -216,20 +216,3 @@ body {
 #medium:hover {
   color: black;
 }
-
-#footer {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  padding: 0.2em;
-}
-
-#footer-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 0.9em;
-  font-weight: bold;
-  text-decoration: None;
-}
-
-#footer-text:hover {
-  color: rgb(254,219,47); 
-}
