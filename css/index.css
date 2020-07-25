@@ -198,7 +198,7 @@ body {
 }
 
 .contact-logo {
-  color: rgb(56,163,184);
+  color: black;
   font-size: 3em;
   margin-top: 0.4em;
   padding-left: 0em;
@@ -206,13 +206,25 @@ body {
 }
 
 #linkedin:hover {
-  color: rgb(0,119,181);
+  color: rgb(8, 86, 168);
 }
 
 #github:hover {
-  color: rgb(64,119,192);
+  color: rgb(8, 86, 168);
 }
 
 #medium:hover {
-  color: black;
+  color: rgb(8, 86, 168);
+}
+
+#footer {
+  background: rgb(20,35,75);
+  padding: 0.1em;
+}
+
+#footer-text {
+  color: rgb(255,255,255);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
 }
