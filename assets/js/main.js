@@ -1,9 +1,16 @@
-// toolTips
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip();
+// Sidebar collapse
+$(document).ready(function () {
+  $('#sidebar-collapse').on('click', function () {
+    $('#sidebar, #content').toggleClass('active');
+    $('.collapse.in').toggleClass('in');
+    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+  });
 });
 
-// scrollToTop
+// Scrollspy
+$('body').scrollspy({ target: '.nav-menu' })
+
+// Scroll to top
 const mybutton = document.getElementById('scroll-to-top');
 
 window.onscroll = () => scrollCheck();
@@ -21,3 +28,8 @@ const scrollToTop = () => {
   document.documentElement.scrollTop = 0;
   window.location.hash = '';
 };
+
+// Tooltips
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
