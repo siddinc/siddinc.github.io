@@ -1,25 +1,22 @@
 // Sidebar collapse
-$(document).ready(function () {
-  $('#sidebar-collapse').on('click', function () {
-    $('#sidebar, #content').toggleClass('active');
-    $('.collapse.in').toggleClass('in');
-    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-  });
-});
+// $("#menu-toggle").click(function(e) {
+//   e.preventDefault();
+//   $("#wrapper").toggleClass("toggled");
+// });
 
 // Scrollspy
 $('body').scrollspy({ target: '.nav-menu' })
 
 // Scroll to top
-const mybutton = document.getElementById('scroll-to-top');
+const scrollToTopButton = document.getElementById('scroll-to-top');
 
 window.onscroll = () => scrollCheck();
 
 const scrollCheck = () => {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-    mybutton.style.display = 'block';
+    scrollToTopButton.style.display = 'block';
   } else {
-    mybutton.style.display = 'none';
+    scrollToTopButton.style.display = 'none';
   }
 };
 
