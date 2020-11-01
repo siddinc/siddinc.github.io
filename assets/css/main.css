@@ -82,7 +82,7 @@ a:focus {
 #scroll-parent .nav-menu .nav-item .nav-link.active {
   color: rgb(0, 0, 0);
   background: rgb(247, 255, 255);
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 #scroll-parent .nav-menu .nav-item .nav-link:hover {
@@ -112,6 +112,11 @@ a:focus {
 
 #coding-img {
   width: 80%;
+}
+
+#teach-img {
+  width: 90%;
+  border-radius: 1%;
 }
 
 .navbar {
