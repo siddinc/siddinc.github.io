@@ -141,7 +141,7 @@ a:focus {
   color: rgb(41, 43, 44);
 }
 
-.social-icons .social-icon {
+.reach-icons .reach-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -154,10 +154,10 @@ a:focus {
   margin-right: 1.5rem;
   margin-bottom: 1em;
 }
-.social-icons .social-icon:last-child {
+.reach-icons .reach-icon:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
+.reach-icons .reach-icon:hover {
   background-color: rgb(4, 122, 252);
 }
 
