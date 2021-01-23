@@ -7,7 +7,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  background: rgb(247, 255, 255);
+  background: rgb(240, 245, 245);
 }
 
 a,
@@ -76,18 +76,18 @@ a:focus {
   font-size: 1.1em;
   font-weight: 600;
   display: block;
-  color: rgb(247, 255, 255);
+  color: rgb(240, 245, 245);
 }
 
 #scroll-parent .nav-menu .nav-item .nav-link.active {
   color: rgb(0, 0, 0);
-  background: rgb(247, 255, 255);
+  background: rgb(240, 245, 245);
   font-size: 1.1em;
 }
 
 #scroll-parent .nav-menu .nav-item .nav-link:hover {
   color: rgb(0, 0, 0);
-  background: rgb(247, 255, 255);
+  background: rgb(240, 245, 245);
 }
 
 #scroll-parent .nav-menu .nav-item .nav-link:hover .nav-link-icon {
@@ -95,7 +95,7 @@ a:focus {
 }
 
 #scroll-parent .nav-menu .nav-item .nav-link .nav-link-icon {
-  color: rgb(247, 255, 255);
+  color: rgb(240, 245, 245);
   font-size: 1.1em;
   vertical-align: text-top;
 }
@@ -125,7 +125,7 @@ a:focus {
 }
 
 .navbar .nav-item {
-  color: rgb(247, 255, 255);
+  color: rgb(240, 245, 245);
   font-size: 1.1em;
   font-weight: 600;
 }
@@ -233,13 +233,15 @@ a:focus {
 
 .card {
   padding: 1em;
-  background: rgb(232, 232, 232);
+  background: rgb(255, 255, 255);
   border: 0em;
+  border-radius: 0.2em;
 }
 
 .card #card-img {
   height: 12em;
   object-fit: cover;
+  border-radius: 0.2em;
 }
 
 .card .card-title {
