@@ -134,7 +134,7 @@ a:focus {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 0px;
   z-index: 99;
   cursor: pointer;
   font-size: 3em;
