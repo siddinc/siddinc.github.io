@@ -106,6 +106,7 @@ a:focus {
 
 #profile-img {
   width: 9em;
+  height: 9em;
   border: 5px solid rgb(56, 56, 56);
   margin-bottom: 0.5em;
 }
